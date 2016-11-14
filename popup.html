@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+	background: #999;
+	width: 200px;
+	height: 250px;
+	overflow: hidden;
+	font-family: arial;
+}
+#formdiv{
+	overflow: hidden;
+}
+h1{
+	font-size: 12px;
+	text-align: center;
+}
+form{
+	background: #fff;
+	padding: 12px;
+}
+label{
+	font-size: 12px;
+}
+input {
+	margin: 4px 0;
+	border: solid 1px gray;
+	border-left: solid 7px gray;
+}
+input#logoff{
+	margin-left:  12px;
+}
+input[type="submit"],input[type="checkbox"]{
+	cursor: pointer;
+}
+</style>
+	<title>HS Smart Connecter (By Azim Atefi)</title>
+	<script type="text/javascript"  language="javascript" src="popup.js" charset="utf-8"></script>
+</head>
+<body onload="initialize()">
+		<div id="formdiv">
+			<h1>سیستم اتصال هوشمند اینترنت دانشگاه کاشان</h1>
+			<form id="form">
+	            <label>Enter username:
+	                <input id="username">
+	            </label>
+	            <br>
+	            <label>Enter password:
+	                <input id="password" type="password">
+	            </label>
+	            <br>
+	            <br>
+	            <label>Save Your Data:
+	                <input id="save" type="checkbox" value="yes">
+	            </label>
+	            <br>
+	            <br>
+	            <input id="convert-submit" type="submit" value="برقراری اتصال">
+	        </form>
+	    </div>
+	    <input type="submit" id="logoff" type="submit" value="قطع اتصال">
+</body>
+</html>
